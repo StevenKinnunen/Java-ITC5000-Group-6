@@ -3,7 +3,7 @@ A team class project for ITC5000.
 
 Contributors: Mariana Betancourt, Steven Kinnunen, Sandra Maldonado, Muhammad Yousaf Malik, Umar Mohammad and Henry Wang
 
-As per instructions defined by Professor Nihad Al-Juboori for Humber's ITC5000 class, this document will do the following:
+As per instructions defined by Professor Nihad Al-Juboori for Humber's ITC5000 class, this program will do the following:
 
 1. (Steve) When the program starts, a welcoming message will appear “Welcome in Humber College” 
 
