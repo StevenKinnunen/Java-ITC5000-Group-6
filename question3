@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+	public class QUESTION3 {
+		public static void main(String[] args) {
+		
+			int attempt = 0;
+			int numStudents = 0;
+			Scanner input = new Scanner(System.in);
+			do {
+			System.out.print("Please enter number of students [1-50] : ");
+			numStudents = read.nextInt(); //error with this line
+			attempt++;
+			
+			if ((numStudents < 1 || numStudents > 50) && attempt < 3) {
+				System.out.println("Please enter correct number of students [ Attempt left : "+ (3 - attempt) + "]");
+				
+			} else if ((numStudents < 1 || numStudents > 50)) {
+				System.out.println("No attempts left");
+				System.exit(0);
+			}
+		
+		} while (attempt < 3 && (numStudents < 1 || numStudents > 50));
+		}
+}
