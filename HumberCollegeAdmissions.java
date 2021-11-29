@@ -27,9 +27,6 @@ public static Boolean passwordValidation(String humber_password) {
 		
 		Scanner input = new Scanner(System.in);
 		
-		int spec_char = 0;
-		int num = 0;
-		int upper_letter = 0;
 		int attempt = 0;
 		
 		Boolean valid_password = false;
@@ -39,6 +36,10 @@ public static Boolean passwordValidation(String humber_password) {
 			
 		while(attempt < 3){ //while loop contains a for loop for accumulators but also conditional statements to assess password criteria
 			attempt++;
+			int upper_letter = 0;
+			int num = 0;
+			int spec_char = 0;
+			
 			for(int index = 0; index < humber_password.length(); index++) {
 				if (Character.isDigit(humber_password.charAt(index))) {
 					num += 1; //the number of digits in the password
