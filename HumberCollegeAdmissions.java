@@ -19,8 +19,8 @@ public class HumberCollegeAdmissions {
 			System.out.println("Thank you " + username + ", please enter the number of students: ");
 		}
 		
-		int student_num = 3;
-		System.out.println(nameList(student_num));
+		int student_num = 3; //This is a placeholder value, final variable will be assigned to the output of a method 
+		System.out.println(nameList(student_num)); //Prints output of nameList with student_num as argument, will be saved to variable in final program
 	}
 	
 public static Boolean passwordValidation(String humber_password) {
