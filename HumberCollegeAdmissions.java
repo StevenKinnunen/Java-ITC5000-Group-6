@@ -16,7 +16,7 @@ public class HumberCollegeAdmissions {
 		
 		String humber_password = input.next();
 		if(passwordValidation(humber_password)){
-			System.out.println("Thank you, please enter the number of students: ");
+			System.out.println("Thank you " + username + ", please enter the number of students: ");
 		}
 		
 		int student_num = 3;
