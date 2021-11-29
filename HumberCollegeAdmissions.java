@@ -7,6 +7,12 @@ public class HumberCollegeAdmissions {
 		System.out.println("Welcome to Humber College");
 		
 		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please enter a username: ");
+		
+		String username = input.next();
+		
+		System.out.println("Thank you " + username + ", please enter a password:");
 	
 		int student_num = 3;  //This is a placeholder value, final variable will be assigned to the output of a method 
 		System.out.println(nameList(student_num)); //Prints output of nameList with student_num as argument, will be saved to variable in final program
