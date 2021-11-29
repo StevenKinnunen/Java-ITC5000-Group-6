@@ -7,10 +7,21 @@ public class HumberCollegeAdmissions {
 		
 		Scanner input = new Scanner(System.in);
 	
-		System.out.println("Please enter a username: ");
+		int student_num = 3;
+		System.out.println(nameList(student_num));
+	}
+	public static  String nameList(int student_num) {
 		
-		String username = input.next();
+		Scanner input = new Scanner(System.in);
+		int count = 0; // accumulator 
+		String[] student_names = new String[student_num]; //ensuring the list is the same length as the number provided
+		for(count = 0; count < student_num; count++) { //iterating through count as long as it is less than student_num
+			System.out.println("Please enter a name: ");
+			student_names[count] = input.nextLine(); //enter the names with spaces until accumulator is equal to student_num
+		}
 		
-		System.out.println("Thank you " + username + ", please enter a password:");
+		input.close();
+		return Arrays.toString(student_names); //return user readable array of names
+		
 	}
 }
