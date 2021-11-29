@@ -8,7 +8,7 @@ import java.util.Scanner;
 			Scanner input = new Scanner(System.in);
 			do {
 			System.out.print("Please enter number of students [1-50] : ");
-			numStudents = read.nextInt(); //error with this line
+			numStudents = input.nextInt(); //error with this line
 			attempt++;
 			
 			if ((numStudents < 1 || numStudents > 50) && attempt < 3) {
