@@ -88,7 +88,7 @@ public static  String nameList(int student_num) {
 		}
 		
 		
-		return student_names; //return user readable array of names
+		return student_names; //return user array of student names
 		
 	}
 }
