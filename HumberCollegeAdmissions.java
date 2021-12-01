@@ -87,8 +87,8 @@ public static  String nameList(int student_num) {
 			student_names[count] = input.nextLine(); //enter the names with spaces until count is equal to student_num
 		}
 		
-		input.close();
-		return Arrays.toString(student_names); //return user readable array of names
+		
+		return student_names; //return user readable array of names
 		
 	}
 }
