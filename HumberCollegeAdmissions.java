@@ -90,6 +90,9 @@ public static  String nameList(int student_num) {
 		
 		return student_names; //return user array of student names
 		
+	// Finding the GPA of the student
+	double gpa;	
+	gpa = ((math*4)+(science*5)+(language*4)+(drama*3)+(Music*2)+(Biology*4))/(4+5+4+3+2+4);
 	}
 }
 
