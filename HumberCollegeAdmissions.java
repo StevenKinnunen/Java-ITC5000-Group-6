@@ -65,7 +65,7 @@ public static Boolean passwordValidation(String humber_password) {
 											// the correct password
 		
 		} 
-			else if (!(humber_password.length() >= 10 && (num == 2 || num == 3) && upper_letter >= 1 && spec_char == 1)){
+			else{
 				System.out.println("Sorry, you have run out of attempts. This program is terminating now.");
 				System.exit(0);  //assuming 3 incorrect attempts in a row, program terminates
 		}
