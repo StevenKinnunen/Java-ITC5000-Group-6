@@ -92,7 +92,7 @@ public static  String nameList(int student_num) {
 		
 	}
 	
-public static void main(String args[])
+public static void studentGrades(String args[])
     {
     	Scanner in = new Scanner(System.in);
         
