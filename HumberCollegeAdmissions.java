@@ -91,5 +91,31 @@ public static  String nameList(int student_num) {
 		return student_names; //return user array of student names
 		
 	}
+	
+public static void main(String args[])
+    {
+    	Scanner in = new Scanner(System.in);
+        
+            System.out.print("Enter Marks of Subject Math:");
+             int Math = in.nextInt();
+             
+               System.out.print("Enter Marks of Subject Science:");
+                int Science = in.nextInt();  
+                 
+                 System.out.print("Enter Marks of Subject Language:");
+                   int Language = in.nextInt();
+                 
+                   System.out.print("Enter Marks of Subject Drama:");
+                      int Drama = in.nextInt();
+                      
+                      System.out.print("Enter Marks of Subject Music:");
+                        int Music = in.nextInt();
+                      
+                        System.out.print("Enter Marks of Subject Biology:");
+                           int Biology = in.nextInt();
+                 
+                 
+          
+        }
 }
 
