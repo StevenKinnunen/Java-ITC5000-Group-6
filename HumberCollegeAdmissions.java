@@ -114,7 +114,8 @@ public static void main(String args[])
                         System.out.print("Enter Marks of Subject Biology:");
                            int Biology = in.nextInt();
                  
-                 
+                 double gpa;	
+	gpa = ((math*4)+(science*5)+(language*4)+(drama*3)+(Music*2)+(Biology*4))/(4+5+4+3+2+4);
           
         }
 }
