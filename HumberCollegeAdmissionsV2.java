@@ -94,7 +94,7 @@ public static Boolean passwordValidation(String humber_password) {
 				valid_password = true; //assuming all criteria are met, valid_password evaluates to true and program breaks out of loop
 				
 		}
-			else if(attempt < 3 && !(humber_password.length() >= 10 && (num == 2 || num == 3) && upper_letter >= 1 && spec_char == 1)) { 
+			else if(attempt < 3) { 
 			
 			System.out.println("You only have " + (3 - attempt) + " attempts left. Please enter a VALID password: ");
 			humber_password = input.next();  //assuming one or more of the criteria are not met, the user has 2 more chances (iterations through the loop) to enter 
