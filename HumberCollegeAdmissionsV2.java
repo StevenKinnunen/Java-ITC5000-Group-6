@@ -122,7 +122,7 @@ public static int validNum(int num) {
 	while(attempt < 3 && (num > 50 || num < 1)) { //the program checks if the attempt remains less than 3 AND if the number is either
 		attempt++;                                // greater than 50 OR less than 1, attempt increments by 1 for each iteration of loop
 		
-		if(attempt < 3 && (num > 50 || num < 1)) { // program allows 2 more attempts to input correct number between 1 and 50 inclusive
+		if(attempt < 3) { // program allows 2 more attempts to input correct number between 1 and 50 inclusive
 			System.out.println("You only have " + (3 - attempt) + " attempts left. Please enter a VALID integer from 1 to 50: ");
 			num = input.nextInt();
 		}
