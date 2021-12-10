@@ -20,7 +20,7 @@ public class HumberCollegeAdmissionsV2 {
 			System.out.println("Thank you " + username + ", please enter the number of students: "); // asking user for number of students 
 		}
 		
-		int student_num = validNum(input.nextInt()); //calling validNum method on user input and storing result in student_num variable
+		int student_num = numberValidation(input.nextInt()); //calling validNum method on user input and storing result in student_num variable
 		System.out.println(student_num);
 		
 		
@@ -113,28 +113,30 @@ public static Boolean passwordValidation(String humber_password) {
 	
 }
 
-public static int validNum(int num) {
-	Scanner input = new Scanner(System.in); //although scanner has already been initialized in main, must be initialized in this method
-	
-	int attempt = 0; //we set initial attempt at 0
-	
-	
-	while(attempt < 3 && (num > 50 || num < 1)) { //the program checks if the attempt remains less than 3 AND if the number is either
-		attempt++;                                // greater than 50 OR less than 1, attempt increments by 1 for each iteration of loop
+public static int numberValidation(int number){
+			int attempt = 0;
+			
+			Scanner input = new Scanner(System.in);
+			while (attempt < 3){
+			
+			attempt++; // attempt = 0
+			if(number >= 1 && number <= 50) {
+				System.out.println("Correct number:");
+				break;
+			}
+			else if (attempt < 3) {
+				System.out.println("Please enter correct number of students [ Attempt left : "+ (3 - attempt) + "]");
+				number = input.nextInt();
+				
+			} else  {
+				System.out.println("No attempts left");
+				System.exit(0);
+			}
 		
-		if(attempt < 3) { // program allows 2 more attempts to input correct number between 1 and 50 inclusive
-			System.out.println("You only have " + (3 - attempt) + " attempts left. Please enter a VALID integer from 1 to 50: ");
-			num = input.nextInt();
+		} 
+			
+			return number;
 		}
-		else{
-			System.out.println("Sorry, you have run out of attempts. This program is terminating now.");
-			System.exit(0); //upon invalid third attempt, the program terminates
-		}
-		
-	}
-	
-	return num;  //the latest value of num is returned if the program is not terminated
-}
 	
 public static  String[] nameList(int student_num) {
 		
