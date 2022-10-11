@@ -338,10 +338,7 @@ public static void highestGpaSchool(String[][] school_list, int[][] gpa_list){
 		
 	}
 	
-	System.out.println("Highest GPA in Engineering is " + eng_name + " with a GPA of: " + String.valueOf(eng_max));
-	System.out.println("Highest GPA in Business is " + bus_name + " with a GPA of: " + String.valueOf(bus_max));
-	System.out.println("Highest GPA in Law is " + law_name + " with a GPA of: " + String.valueOf(law_max));
-	System.out.println("Highest GPA for those not accepted is " + not_name + " with a GPA of: " + String.valueOf(not_max));
+	
 }
 
 }
