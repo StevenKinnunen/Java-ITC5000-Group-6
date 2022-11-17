@@ -5,7 +5,8 @@ public class HumberCollegeAdmissionsV2 {
 	public static void main(String args[]) {
 		
 		//**STEVE: introduce program, cover until line 17
-		
+		System.out.printlin("Welcome to the jungle")
+			
 		System.out.println("Welcome to Humber College"); 
 		
 		Scanner input = new Scanner(System.in);
