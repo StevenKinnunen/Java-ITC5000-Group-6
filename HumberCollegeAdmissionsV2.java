@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class HumberCollegeAdmissionsV2 {
 	public static void main(String args[]) {
 		
-		//**STEVE: introduce program, cover until line 17
+		//**STEVE: introduce program, cover until line 18
 		System.out.printlin("Welcome to the jungle")
 			
 		System.out.println("Welcome to Humber College"); 
@@ -17,7 +17,7 @@ public class HumberCollegeAdmissionsV2 {
 		
 		System.out.println("Thank you " + username + ", please enter a password:");
 		
-		//**SANDRA: cover until line 24 in main method, go into detail about passwordValidation method BEFORE discussing line 24
+		//**SANDRA: cover until line 25 in main method, go into detail about passwordValidation method BEFORE discussing line 24
 		
 		String humber_password = input.nextLine(); 
 		if(passwordValidation(humber_password)){ //check if the password is valid using humber_password as an argument for passwordValidation
@@ -25,30 +25,30 @@ public class HumberCollegeAdmissionsV2 {
 			System.out.println("Thank you " + username + ", please enter the number of students: "); // asking user for number of students 
 		}
 		
-		//**MARIANA: cover until line 30 in main method, go into detail about numberValidation method BEFORE discussing line 30
+		//**MARIANA: cover until line 31 in main method, go into detail about numberValidation method BEFORE discussing line 31
 		
 		int student_num = numberValidation(input.nextInt()); //calling validNum method on user input and storing result in student_num variable
 		System.out.println(student_num);
 		
-		//**STEVE: cover until line 35 of main method, go into detail about nameList method BEFORE discussing line 35
+		//**STEVE: cover until line 36 of main method, go into detail about nameList method BEFORE discussing line 36
 		
 		String[] student_list = nameList(student_num); // creating 1D string array the store each students name using nameList method, student_num as argument
 		System.out.println(Arrays.toString(student_list)); //Arrays.toString allows us to print user-readable string array of student_list
 		
-		//**UMAR: cover until line 42 of main method, go into detail about studentGrades method BEFORE discussing line 42
+		//**UMAR: cover until line 43 of main method, go into detail about studentGrades method BEFORE discussing line 43
 	
 		
 		System.out.println("Please enter the grades (0-100) for each student.");
 		int[][] student_grades = studentGrades(student_list); //creating a 2D integer array to store each students grades using studentGrades method
 		System.out.println(Arrays.deepToString(student_grades));  //Arrays.deepToString converts the array to a user-readable string array
 		
-		//**MALIK: cover until line 48 in main method, go into detail about studentGpaNum method BEFORE discussing line 48
+		//**MALIK: cover until line 49 in main method, go into detail about studentGpaNum method BEFORE discussing line 49
 		
 		System.out.println(" "); // these lines are just to ensure that the output has some space between lines
 		int[][] gpa_scores = studentGpaNum(student_grades); //creating 2D array of gpa_scores by calling studentGpaNum method on student_grades
 		System.out.println(Arrays.deepToString(gpa_scores));
 		
-		//**HENRY: cover until line 54 of main method, go into detail of schoolList method and then schoolReport method afterwards to discuss output
+		//**HENRY: cover until line 55 of main method, go into detail of schoolList method and then schoolReport method afterwards to discuss output
 		
 		System.out.println(" ");
 		String[][] acceptance_list = schoolList(gpa_scores, student_list); //call schoolList method on gpa_scores and student_list
